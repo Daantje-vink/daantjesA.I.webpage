@@ -1,0 +1,163 @@
+/*background image is gemaakt met https://mycolor.space/gradient3*/
+/*het is een artistieke site dus mag veel kleur hebben*/
+
+body {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 5fr 5fr 5fr 1fr;
+  color: black;
+  background-image: linear-gradient(
+    to right top,
+    #ff9976,
+    #ffa78d,
+    #ffb5a2,
+    #ffc3b7,
+    #ffd2cb,
+    #ffcecc,
+    #ffcacd,
+    #ffc6d0,
+    #feafcd,
+    #f49ad4,
+    #df89e1,
+    #ba7ef3
+  );
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande";
+  font-size: small;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Poor Story", cursive;
+  color: #ad6e68;
+  font-size: large;
+  text-align: center;
+}
+h3,
+h4 {
+  text-align: start;
+}
+
+img {
+  border: 5px solid rgb(0, 0, 0);
+  display: block;
+}
+/*portretten moeten rond zijn ook handig voor testimonials border-radius 50%*/
+.portret {
+  border: 5px solid rgb(0, 0, 0);
+  border-radius: 100%;
+}
+/* code voor lose delen begint hier*/
+/*index*/
+nav {
+  grid-area: 1/1/2/3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+nav li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: inline;
+}
+nav button {
+  background-color: #ff9976;
+  box-shadow: inset 2px 2px 5px 2px#ffc6d0;
+}
+header {
+  grid-area: 2/1/2/3;
+  border: 3px solid black;
+  background-image: linear-gradient(
+    to right top,
+    #ff9976,
+    #ffa78d,
+    #ffb5a2,
+    #ffc3b7,
+    #ffd2cb,
+    #f8cec9,
+    #f0cbc6,
+    #e9c7c4,
+    #dab0ac,
+    #cc9a95,
+    #bd847e,
+    #ad6e68
+  );
+  border-radius: 10px;
+  margin-bottom: 5px;
+}
+
+section {
+  margin: 0 5px 20px 5px;
+}
+#section1 {
+  grid-area: 3/1/3/3;
+  display: flex;
+  flex-direction: column;
+}
+
+#section2 {
+  grid-area: 4/1/4/3;
+  display: flex;
+  flex-direction: column;
+}
+
+#section3 {
+  grid-area: 5/1/5/3;
+}
+
+Div.review {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+footer {
+  grid-area: 6/1/6/3;
+  color: rgb(0, 208, 255);
+  display: flex;
+  justify-content: center;
+}
+/*orderform*/
+main {
+  grid-area: 3/1/6/3;
+}
+
+main.order {
+  border: #ad6e68 solid 5px;
+  padding: 4px;
+}
+
+/*about me */
+
+/*contact*/
+
+/*links*/
+
+/*Gallery*/
+
+div.gallery {
+  margin: 5px;
+  border: 1px solidblack;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #ad6e68;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  text-align: center;
+}
+
+/* basis voor website, van groot naar klein 
+is makkelijker voor mijn brein, helaas mag dat van Winc niet zo zijn,
+daarom voor 1 keer andersom proberen,(opmerking voor later eigengebruik)*/
+/*mediaqueries. */

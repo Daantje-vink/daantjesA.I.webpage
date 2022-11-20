@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daantje A.I assisted Art</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li>
+          <button>
+            <a href="./index.html" title="link to home page"> Home</a>
+          </button>
+        </li>
+        <li>
+          <button>
+            <a href="./aboutme.html" title="link to about me">about me </a>
+          </button>
+        </li>
+        <li>
+          <button>
+            <a href="./contact.html" title="link to contactpage"> contact</a>
+          </button>
+        </li>
+        <li>
+          <button>
+            <a href="./links.html" title="link the link page"> links</a>
+          </button>
+        </li>
+        <li>
+          <button>
+            <a href="./orderform.html" title="link to orderform"> orderform</a>
+          </button>
+        </li>
+        <li>
+          <button>
+            <a href="./gallery.html" title="link to gallery"> gallery</a>
+          </button>
+        </li>
+      </ul>
+    </nav>
+    <header><h1>Daantjes A.I. Assisted Art</h1></header>
+    <main class="order">
+      <p>
+        If you want to order any A.I. assisted art work fill in the form below.
+        You will receive a picture made will Stable Infussion costumized for
+        you.. If you want to order any existing artwork please fill
+        <a href="./contact.html" title="link to contact form">contact form</a>
+      </p>
+      <form name="aanvraag_form" method="POST" data-netlify="true">
+        <h3>personal data</h3>
+        <p>
+          <label> Name:</label> <br />
+          <input type="text" name="name" value=" Example Name" />
+        </p>
+        <p>
+          <label> Phone nummber:</label> <br />
+          <input type="number" name="phonenummer" />
+        </p>
+        <p>
+          <label>Date of Birth</label><br />
+          <input type="date" name="dob" value="voorbeeld@voorbeeld.nl" />
+        </p>
+        <p>
+          <label> Email:</label><br />
+          <input type="email" name="email" value="voorbeeld@voorbeeld.nl" />
+        </p>
+        <h3>wat would you like to see?</h3>
+        <p>
+          <label
+            >describe the subject you like to see <br />
+            <textarea name="onderwerp " rows="10" cols="25 "></textarea>
+          </label>
+        </p>
+        <p>
+          <label> what is the gender of your subject?</label><br />
+          <input type="radio" id="female" name="gender" />
+          <label for="female">Female</label>
+          <input type="radio" id="male" name="gender" />
+          <label for="male">male</label>
+          <input type="radio" id="other" name="gender" />
+          <label for="female">other</label>
+        </p>
+        <p>
+          <label> wat is your favorite colour?</label><br />
+          <input type="color" name="colour" />
+        </p>
+        <p>
+          <label> What is your favorite genre? </label><br />
+          <input type="checkbox" name="genre1" id="genre1" value="Zombie" />
+          <label for="genre1">zombiecore</label>
+          <input type="checkbox" name="genre2" id="genre2" value="Landscape" />
+          <label for="genre2">landscape</label>
+          <br />
+          <input type="checkbox" name="genre3" id="genre3" value="STEAMPUNK" />
+          <label for="genre3">steampunk</label>
+          <input type="checkbox" name="genre4" id="genre4" value="anime" />
+          <label for="genre4">anime</label><br />
+          <input type="checkbox" name="genre5" id="genre5" value="comic" />
+          <label for="genre5">comic</label>
+          <input
+            type="checkbox"
+            name="genre6"
+            id="genre6"
+            value="retro-futirisme"
+          />
+          <label for="genre6"> retro-futirisme</label> <br />
+          <input type="checkbox" name="genre7" id="genre7" value="portrait" />
+          <label for="genre8"> portrait </label>
+          <input
+            type="checkbox"
+            name="genre8"
+            id="genre8"
+            value="photographs"
+          />
+          <label for="genre8"> photographs</label>
+        </p>
+
+        <p>
+          <label
+            >Other request: <br />
+            <textarea name="vraag" rows="10" cols="25 "></textarea>
+          </label>
+        </p>
+
+        <button input type="submit">Send Request</button>
+        <button input type="reset">Reset Form</button>
+      </form>
+    </main>
+
+    <footer>© Daantje V 2022</footer>
+  </body>
+</html>
