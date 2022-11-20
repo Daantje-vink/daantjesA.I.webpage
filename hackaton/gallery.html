@@ -44,6 +44,7 @@
     </nav>
     <header><h1>Daantjes A.I. Assisted Art</h1></header>
     <main>
+      <h2>My artwork</h2>
       <div class="gallery">
         <a target="_blank" href="/dragon.jpg">
           <img
@@ -95,6 +96,29 @@
         </a>
         <div class="desc">Older Merman. Order nr: MM1</div>
       </div>
+
+      <form name="contact form" method="POST" data-netlify="true">
+        <p>
+          <label>
+            NAME: <input type="text" name="name" value=" Example Name"
+          /></label>
+        </p>
+
+        <p>
+          <label>
+            Email adres:
+            <input type="email" name="email" value="voorbeeld@voorbeeld.nl"
+          /></label>
+        </p>
+        <p>
+          <label
+            >Schrijf hier de vraag die je hebt: <br />
+            <textarea name="vraag" rows="10" cols="30 "></textarea>
+          </label>
+        </p>
+
+        <button type="submit">Send</button>
+      </form>
     </main>
 
     <footer>© Daantje V 2022</footer>

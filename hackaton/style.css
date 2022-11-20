@@ -4,7 +4,7 @@
 body {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 5fr 5fr 5fr 1fr;
+  grid-template-rows: 1fr 1fr 3fr 3fr 8fr 1fr;
   color: black;
   background-image: linear-gradient(
     to right top,
@@ -105,47 +105,75 @@ section {
 
 #section3 {
   grid-area: 5/1/5/3;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 4fr 4fr;
 }
 
-Div.review {
+/*Div.review {
   display: flex;
   justify-content: space-around;
-  flex-direction: row;
+  flex-direction: comlumn;}*/
+
+div.review {
+  margin: 10px;
+  padding-left: 5px;
+  border: 1px solid black;
+}
+
+div.review img {
+  width: 80%;
+  height: auto;
+  align-items: center;
+}
+
+div.desc {
+  text-align: center;
 }
 
 footer {
   grid-area: 6/1/6/3;
-  color: rgb(0, 208, 255);
+  color: brown;
   display: flex;
   justify-content: center;
+}
+
+h2.section3 {
+  grid-area: 1/1/2/3;
+}
+
+#revieuw1 {
+  grid-area: 2/1/2/2;
+}
+
+#revieuw2 {
+  grid-area: 2/2/2/3;
+}
+#revieuw3 {
+  grid-area: 3/1/4/2;
+}
+#revieuw4 {
+  grid-area: 3/2/4/3;
 }
 /*orderform*/
 main {
   grid-area: 3/1/6/3;
 }
 
-main.order {
+form {
   border: #ad6e68 solid 5px;
   padding: 4px;
 }
-
-/*about me */
-
-/*contact*/
-
-/*links*/
-
-/*Gallery*/
-
 div.gallery {
-  margin: 5px;
-  border: 1px solidblack;
+  margin: 10px;
+  border: 1px solid black;
   float: left;
   width: 180px;
 }
 
 div.gallery:hover {
-  border: 1px solid #ad6e68;
+  border: 5px solid #f49ad4;
+  background-color: #f8cec9;
 }
 
 div.gallery img {
@@ -155,6 +183,13 @@ div.gallery img {
 
 div.desc {
   text-align: center;
+  /*about me */
+
+  /*contact*/
+
+  /*links*/
+
+  /*Gallery*/
 }
 
 /* basis voor website, van groot naar klein 

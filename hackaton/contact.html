@@ -43,23 +43,39 @@
       </ul>
     </nav>
     <header><h1>Daantjes A.I. Assisted Art</h1></header>
-    <section id="section1">
-      <h2>About the Artist</h2>
+    <main>
       <p>
-        My name is Daantje. I am an artist, poet and auteur. This is page is
-        about my art and me as an digital artist. If you want to know more about
-        me as an poet please check my website
-        <a
-          href="https://www.daniellevinkschrijft.nl"
-          title=" link to Daniellevinkschrijft.nl"
-          target="blank"
-          >Daniellevinkschrijft.nl</a
-        >
+        Would like to know more, ask me questions, or order something you can
+        not trough
+        <a href="/orderform.html" title="link to orderform">the orderform</a>
+        or <a href="/gallery.html" title="gallery">gallery</a>? Please fill in
+        the form below.
       </p>
-    </section>
 
-    <section id="section2"></section>
-    <section id="section3"></section>
+      <form name="contact form" method="POST" data-netlify="true">
+        <p>
+          <label>
+            NAME: <input type="text" name="name" value=" Example Name"
+          /></label>
+        </p>
+
+        <p>
+          <label>
+            Email adres:
+            <input type="email" name="email" value="voorbeeld@voorbeeld.nl"
+          /></label>
+        </p>
+        <p>
+          <label
+            >Schrijf hier de vraag die je hebt: <br />
+            <textarea name="vraag" rows="10" cols="25 "></textarea>
+          </label>
+        </p>
+
+        <button type="submit">Send</button>
+        <button input type="reset">Reset</button>
+      </form>
+    </main>
 
     <footer>© Daantje V 2022</footer>
   </body>
