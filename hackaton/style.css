@@ -59,18 +59,19 @@ iframe {
 nav {
   grid-area: 1/1/2/3;
   display: flex;
+  justify-content: space-evenly;
   align-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 5px;
 }
-nav li {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: inline;
-}
+
 nav button {
   background-color: #ff9976;
   box-shadow: inset 2px 2px 5px 2px#ffc6d0;
+  border-radius: 10%;
+  margin: 5px;
 }
+
 header {
   grid-area: 2/1/2/3;
   border: 3px solid black;
