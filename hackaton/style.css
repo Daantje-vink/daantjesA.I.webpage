@@ -60,7 +60,7 @@ nav {
   grid-area: 1/1/2/3;
   display: flex;
   justify-content: space-evenly;
-  align-content: space-around;
+  
   flex-wrap: wrap;
   margin-bottom: 5px;
 }
@@ -125,7 +125,7 @@ div.review {
 div.review img {
   width: 80%;
   height: auto;
-  align-items: center;
+ 
 }
 
 div.desc {
@@ -147,6 +147,9 @@ h2.section3 {
 
 #revieuw1 {
   grid-area: 2/1/2/2;
+
+  
+ 
 }
 
 #revieuw2 {
@@ -174,7 +177,7 @@ div.gallery {
   margin: 10px;
   border: 1px solid black;
   float: left;
-  width: 180px;
+  width: 45%;
 }
 
 div.gallery:hover {
@@ -183,7 +186,7 @@ div.gallery:hover {
 }
 
 div.gallery img {
-  width: 100%;
+  width: 95%;
   height: auto;
 }
 
@@ -204,3 +207,29 @@ form.galleryform {
 is makkelijker voor mijn brein, helaas mag dat van Winc niet zo zijn,
 daarom voor 1 keer andersom proberen,(opmerking voor later eigengebruik)*/
 /*mediaqueries. */
+
+
+/* Tablets (portrait)
+minimal width : 768px*/
+@media (min-width: 768px) {
+ 
+section.section1{ display:flex;
+  align-content: center;}
+  section.section1 img{ max-width: 50%;
+  ;
+}
+
+  form.galleryform {
+    grid-area:5/1/5/2;
+  }
+div.gallery{
+  max-width: 30%
+}  
+
+}
+  
+
+
+
+/*// Desktop 
+minimal width : 1024px
