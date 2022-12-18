@@ -48,80 +48,52 @@
       </p>
 
       <form name="aanvraag_form" method="POST" data-netlify="true">
-        <h3>personal data</h3>
-        <p>
-          <label> Name:</label> <br />
-          <input type="text" name="name" value=" Example Name" />
-        </p>
-        <p>
-          <label> Phone nummber:</label> <br />
-          <input type="number" name="phonenummer" />
-        </p>
-        <p>
-          <label>Date of Birth</label><br />
-          <input type="date" name="dob" value="voorbeeld@voorbeeld.nl" />
-        </p>
-        <p>
-          <label> Email:</label><br />
-          <input type="email" name="email" value="voorbeeld@voorbeeld.nl" />
-        </p>
-        <h3>what would you like to see?</h3>
-        <p>
-          <label
-            >describe the subject you like to see: <br />
-            <textarea name="onderwerp " rows="10" cols="30 "></textarea>
-          </label>
-        </p>
-        <p>
-          <label> what is the gender of your subject?</label><br />
-          <input type="radio" id="female" name="gender" />
-          <label for="female">Female</label>
-          <input type="radio" id="male" name="gender" />
-          <label for="male">male</label>
-          <input type="radio" id="other" name="gender" />
-          <label for="female">other</label>
-        </p>
-        <p>
-          <label> what is your favorite colour?</label><br />
-          <input type="color" name="colour" />
-        </p>
-        <p>
-          <label> What is your favorite genre? </label><br />
-          <input type="checkbox" name="genre1" id="genre1" value="Zombie" />
-          <label for="genre1">zombiecore</label>
-          <input type="checkbox" name="genre2" id="genre2" value="Landscape" />
-          <label for="genre2">landscape</label>
-          <br />
-          <input type="checkbox" name="genre3" id="genre3" value="STEAMPUNK" />
-          <label for="genre3">steampunk</label>
-          <input type="checkbox" name="genre4" id="genre4" value="anime" />
-          <label for="genre4">anime</label><br />
-          <input type="checkbox" name="genre5" id="genre5" value="comic" />
-          <label for="genre5">comic</label>
-          <input
-            type="checkbox"
-            name="genre6"
-            id="genre6"
-            value="retro-futirisme"
-          />
-          <label for="genre6"> retro-futirisme</label> <br />
-          <input type="checkbox" name="genre7" id="genre7" value="portrait" />
-          <label for="genre8"> portrait </label>
-          <input
-            type="checkbox"
-            name="genre8"
-            id="genre8"
-            value="photographs"
-          />
-          <label for="genre8"> photographs</label>
-        </p>
+        <h3>Personal data</h3>
 
-        <p>
-          <label
-            >Other requests: <br />
-            <textarea name="vraag" rows="10" cols="30 "></textarea>
-          </label>
-        </p>
+        <label>
+          Name: <br />
+          <input type="text" name="name" value=" Example Name"
+        /></label>
+
+        <label>
+          Phone nummber: <br />
+          <input type="number" name="phonenummer"
+        /></label>
+
+        <label
+          >Date of Birth<br />
+          <input type="date" name="dob" value="voorbeeld@voorbeeld.nl" />
+        </label>
+        <label>
+          Email:<br />
+          <input type="email" name="email" value="voorbeeld@voorbeeld.nl" />
+        </label>
+        <h3>What would you like to see?</h3>
+
+        describe the subject you like to see: <br />
+
+        <textarea name="onderwerp " rows="10" cols="30 "></textarea>
+
+        <p>What is the gender of your subject?</p>
+        <input type="radio" id="female" name="gender" />
+        <label for="female" class="inline">Female</label>
+        <input type="radio" id="male" name="gender" />
+        <label for="male" class="inline">male</label>
+        <input type="radio" id="other" name="gender" />
+        <label for="female" class="inline">other</label>
+
+        <p>what is your favorite colour?</p>
+        <input type="color" name="colour" />
+
+        <p>What is your favorite genre?</p>
+        <label>
+          <textarea name="vraag" rows="10" cols="30 "></textarea>
+        </label>
+
+        <label
+          >Other requests: <br />
+          <textarea name="vraag" rows="10" cols="30 "></textarea>
+        </label>
 
         <button input type="submit">Send Request</button>
         <button input type="reset">Reset Form</button>

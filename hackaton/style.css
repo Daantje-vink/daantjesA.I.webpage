@@ -32,15 +32,18 @@ h3,
 h4 {
   font-family: "Poor Story", cursive;
   color: #ad6e68;
-
   text-align: center;
 }
 h1 {
   font-size: xx-large;
 }
+h2 {
+  font-size: x-large;
+}
 h3,
 h4 {
   text-align: start;
+  font-size: larger;
 }
 
 img {
@@ -169,11 +172,6 @@ h2.section3 {
   grid-area: 3/2/4/3;
 }
 
-form.label {
-  margin-bottom: 100px;
-  padding-bottom: 50px;
-}
-
 /*orderform*/
 main {
   grid-area: 3/1/5/3;
@@ -185,8 +183,18 @@ textarea {
 
 form {
   border: 5px solid #ad6e68;
-  padding: 4px;
+  padding: 10px;
 }
+
+label {
+  display: block;
+  margin: 5px;
+}
+
+.inline {
+  display: inline;
+}
+
 /*Gallery*/
 div.gallery {
   margin: 10px;
@@ -208,6 +216,10 @@ div.gallery img {
 div.desc {
   text-align: center;
   border: 3px black solid;
+}
+
+textarea:focus {
+  border: solid 5px green;
 }
 
 form.responsive-form {
