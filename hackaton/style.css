@@ -22,6 +22,8 @@ body {
   );
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande";
   font-size: small;
+  padding: 0;
+  margin: 0;
 }
 
 h1,
@@ -30,8 +32,11 @@ h3,
 h4 {
   font-family: "Poor Story", cursive;
   color: #ad6e68;
-  font-size: xx-large;
+
   text-align: center;
+}
+h1 {
+  font-size: xx-large;
 }
 h3,
 h4 {
@@ -136,12 +141,14 @@ div.desc {
 }
 
 footer {
-  grid-area: 6/1/6/3;
+  grid-area: 6/1/7/3;
 
   background-color: #df89e1;
   color: brown;
   display: flex;
   justify-content: center;
+  padding: 0px;
+  margin: 0px;
 }
 
 h2.section3 {
@@ -160,6 +167,11 @@ h2.section3 {
 }
 #revieuw4 {
   grid-area: 3/2/4/3;
+}
+
+form.label {
+  margin-bottom: 100px;
+  padding-bottom: 50px;
 }
 
 /*orderform*/
